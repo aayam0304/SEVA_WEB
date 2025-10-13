@@ -39,10 +39,11 @@ def update_counter():
         print(f"Error writing to counter file: {e}")
         return jsonify({'error': 'Could not update count'}), 500
 
-    # Return the new count as a JSON response
+    # Return the new count 
     return jsonify({'count': new_count})
 
 if __name__ == '__main__':
-    # Run the Flask app on localhost, port 5000.
+    # Run the Flask app on localhost
     # The debug=True setting allows for automatic reloading when you save changes.
     app.run(debug=True, port=5000)
+
