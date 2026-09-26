@@ -352,8 +352,8 @@
         const DonationSection = () => (
              <div id="donation" className="py-20 md:py-28 bg-white/90 backdrop-blur-md shadow-2xl rounded-2xl relative">
                  {/* ADDED REMINDER ICON HERE */}
-                 <a href="#reminder" className="absolute top-30 right-20 z-20 p-3 bg-brand-green-dark text-white font-bold rounded-full text-white hover:bg-brand-blue transition-colors shadow-lg" title="Set a Monthly Reminder">
-                     <p >Reminder🔔</p>
+                 <a href="#reminder" className="static md:absolute md:top-8 md:right-8 z-20 mb-6 md:mb-0 mx-auto md:mx-0 flex md:inline-flex w-fit p-3 bg-brand-green-dark text-white font-bold rounded-full hover:bg-brand-blue transition-colors shadow-lg" title="Set a Monthly Reminder">
+                     <p>Reminder🔔</p>
                  </a>
                  {/* END ADDED REMINDER ICON */}
                    <div className="container mx-auto px-6">
@@ -364,21 +364,21 @@
                      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                          <div>
                              
-                                   <div className="grid grid-cols-5  md:grid-cols-2 lg:grid-cols-2 gap-6 items-center">  
+                                   <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 items-center">  
                                        
-                                       <div className="p-4 bg-white rounded-lg shadow-lg flex justify-center items-center h-32">
+                                       <div className="p-4 bg-white rounded-lg shadow-lg flex flex-col justify-center items-center text-center h-32">
                                            <p className="text-center text-xl font-bold text-brand-dark-blue ">Old cloths</p>
                                            <img src="images/old_cloths.png" alt="Partner Logo 1" className="h-24" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
                                        </div>
-                                       <div className="p-4 bg-white rounded-lg shadow-lg flex justify-center items-center h-32">
+                                       <div className="p-4 bg-white rounded-lg shadow-lg flex flex-col justify-center items-center text-center h-32">
                                             <p className="text-center text-xl font-bold text-BLACk ">Old shoes </p>
                                            <img src="images/old_shoe.png" alt="Partner Logo 1" className="h-24" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
                                        </div>
-                                       <div className="p-4 bg-white rounded-lg shadow-lg flex justify-center items-center h-32">
+                                       <div className="p-4 bg-white rounded-lg shadow-lg flex flex-col justify-center items-center text-center h-32">
                                             <p className="text-center text-xl font-bold text-BLACk ">Raw eatables</p>
                                            <img src="images/raw_food.png" alt="Partner Logo 1" className="h-24" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
                                        </div>
-                                       <div className="p-4 bg-white rounded-lg shadow-lg flex justify-center items-center h-32">
+                                       <div className="p-4 bg-white rounded-lg shadow-lg flex flex-col justify-center items-center text-center h-32">
                                             <p className="text-center text-xl font-bold text-BLACk ">Funds</p>
                                            <img src="images/funds.png" alt="Partner Logo 1" className="h-24" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
                                        </div>
@@ -516,70 +516,70 @@
                                         <h2 className="text-3xl md:text-5xl font-bold text-white mb-16">
                                             Sevak
                                         </h2>
-                                        {/* Grid for 3 side-by-side panels */}
-                                        <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
+                                        {/* Grid for panels: 2 per row on mobile, more as screen grows */}
+                                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-8">
                                             
                                             {/* Panel 1 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                               <img src="images/harsh.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                               <img src="images/harsh.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
                                       
-                                                <p className="mt-4 font-bold text-gray-800 font-2">HARSH NEEKHRA</p>
+                                                <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">HARSH NEEKHRA</p>
                                             </div>
 
                                             {/* Panel 2 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                                <img src="images/chantu.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                              <p className="mt-4 font-bold text-gray-800 font-2">TANISHIQ CHOURASIA</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                                <img src="images/chantu.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                              <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">TANISHIQ CHOURASIA</p>
                                             </div>
 
                                             {/* Panel 3 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                                <img src="images/shivansh.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                                <p className="mt-4 font-bold text-gray-800 font-2">SHIVANSH PATEL</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                                <img src="images/shivansh.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                                <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">SHIVANSH PATEL</p>
                                             </div>
                                             {/* Panel 4 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                               <img src="images/aayam.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                               <img src="images/aayam.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
                                       
-                                                <p className="mt-4 font-bold text-gray-800 font-2">AAYAM JAIN</p>
+                                                <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">AAYAM JAIN</p>
                                             </div>
 
                                             {/* Panel 5 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                                <img src="images/ansh.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                               <p className="mt-4 font-bold text-gray-800 font-2">ANSH RAJPUT</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                                <img src="images/ansh.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                               <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">ANSH RAJPUT</p>
                                             </div>
 
                                             {/* Panel 6 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                                <img src="images/bharat.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                               <p className="mt-4 font-bold text-gray-800 font-2">BHARAT TIWARI</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                                <img src="images/bharat.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                               <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">BHARAT TIWARI</p>
                                             </div>{/* Panel 7 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                               <img src="images/animesh.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                                <p className="mt-4 font-bold text-gray-800 font-2">ANIMESH JAIN</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                               <img src="images/animesh.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                                <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">ANIMESH JAIN</p>
                                             </div>
 
                                             {/* Panel 8 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                                <img src="images/teenu.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                              <p className="mt-4 font-bold text-gray-800 font-2">TANISHIQ JAIN</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                                <img src="images/teenu.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                              <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">TANISHIQ JAIN</p>
                                             </div>
 
                                             {/* Panel 9 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                                <img src="images/tanmay.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                               <p className="mt-4 font-bold text-gray-800 font-2">TANMAY JAISWAL</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                                <img src="images/tanmay.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                               <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">TANMAY JAISWAL</p>
                                             </div>{/* Panel 10 */}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                               <img src="images/utkarsh.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                                <p className="mt-4 font-bold text-gray-800 font-2">UTKARSH GUPTA</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                               <img src="images/utkarsh.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                                <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">UTKARSH GUPTA</p>
                                             </div>
 
                                             {/* Panel 11*/}
-                                            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
-                                            <img src="images/matti.png" alt="Partner Logo 1" className="h-40" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
-                                              <p className="mt-4 font-bold text-gray-800 font-2">MIRTYUNJAY JADON</p>
+                                            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col items-center justify-center aspect-square transition-transform duration-300 hover:scale-105">
+                                            <img src="images/matti.png" alt="Partner Logo 1" className="h-20 md:h-40 object-contain" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/96x96/d1d5db/374151?text=Member+1' }}/>
+                                              <p className="mt-4 font-bold text-gray-800 font-2 text-sm md:text-base text-center">MIRTYUNJAY JADON</p>
                                             </div>
                                         </div>
                                         </div>
@@ -778,10 +778,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
